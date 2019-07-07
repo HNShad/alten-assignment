@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="catalog-service" />
+        <module name="service-discovery" />
+        <module name="simulator-service" />
+        <module name="vehicle-info-manager" />
+        <module name="data-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="catalog-service" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="data-service" target="1.8" />
+      <module name="service-discovery" target="1.8" />
+      <module name="simulator-service" target="1.8" />
+      <module name="vehicle-info-manager" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="catalog-service" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="data-service" options="-parameters" />
+      <module name="service-discovery" options="-parameters" />
+      <module name="simulator-service" options="-parameters" />
+      <module name="vehicle-info-manager" options="-parameters" />
+    </option>
+  </component>
+</project>

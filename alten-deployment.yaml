@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: altenapp
+  labels:
+    name: altenapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: altenapp
+  template:
+    metadata:
+      labels:
+        name: altenapp
+    spec:
+      containers:
+      - name: servicediscovery
+        image: gcr.io/big-unison-241706/service-discovery
+        ports:
+        - containerPort: 8761
+      - name: dataservice
+        image: gcr.io/big-unison-241706/data-service
+        ports:
+        - containerPort: 8001
+      - name: simulatorservice
+        image: gcr.io/big-unison-241706/simulator-service
+        ports:
+        - containerPort: 8002
+      - name: catalogservice
+        image: gcr.io/big-unison-241706/catalog-service
+        ports:
+        - containerPort: 8004
+      - name: infomanagerservice
+        image: gcr.io/big-unison-241706/infomanager-service
+        ports:
+        - containerPort: 8003

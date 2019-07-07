@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: alten-service
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    name: altenapp
+  ports:
+  - name: servicediscovery
+    protocol: TCP
+    port: 8761
+  - name: dataservice
+    protocol: TCP
+    port: 801
+  - name: simulatorservice
+    protocol: TCP
+    port: 8002
+  - name: catalogservice
+    protocol: TCP
+    port: 8004
+  - name: infomanagerservice
+    protocol: TCP
+    port: 8003

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/alten-vehicle-assignment.iml" filepath="$PROJECT_DIR$/alten-vehicle-assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/catalog-service/catalog-service.iml" filepath="$PROJECT_DIR$/catalog-service/catalog-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-service/data-service.iml" filepath="$PROJECT_DIR$/data-service/data-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-discovery/service-discovery.iml" filepath="$PROJECT_DIR$/service-discovery/service-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simulator-service/simulator-service.iml" filepath="$PROJECT_DIR$/simulator-service/simulator-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vehicle-info-manager/vehicle-info-manager.iml" filepath="$PROJECT_DIR$/vehicle-info-manager/vehicle-info-manager.iml" />
+    </modules>
+  </component>
+</project>

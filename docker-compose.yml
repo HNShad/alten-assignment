@@ -1,0 +1,30 @@
+version: '3'
+services:
+  vehicleinfomanager:
+    image: infomanager-service
+    ports:
+      - 8003:8003
+    depends_on:
+      - catalogservice
+  catalogservice:
+    image: catalog-service
+    ports:
+      - 8004:8004
+    depends_on:
+      - simulatorservice
+  simulatorservice:
+    image: simulator-service
+    ports:
+      - 8002:8002
+    depends_on:
+      - dataservice
+  dataservice:
+    image: data-service
+    ports:
+      - 8001:8001
+    depends_on:
+      - servicediscovery
+  servicediscovery:
+    image: service-discovery
+    ports:
+      - 8761:8761
